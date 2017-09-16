@@ -88,13 +88,13 @@
         android:layout_weight="0.5">
 
         <TextView
-            android:id="@+id/attyslink"
+            android:id="@+id/googlelink"
             android:layout_gravity="start"
             android:clickable="true"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.1"
-            android:text="Record your own ECG: www.attys.tech"
+            android:text="Geh nach Google"
             android:textSize="12sp" />
 
         <TextView

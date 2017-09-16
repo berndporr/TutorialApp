@@ -34,11 +34,11 @@ public class DanasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ecgaxis);
 
-        attyslink = (TextView) findViewById(R.id.attyslink);
+        attyslink = (TextView) findViewById(R.id.googlelink);
         attyslink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "http://www.attys.tech";
+                String url = "http://www.google.com";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -61,6 +61,8 @@ public class DanasActivity extends AppCompatActivity {
         ok = (Button) findViewById(R.id.okbutton);
         ok.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                grafikView.abc=1;
+                grafikView.neuMalen();
             }
         });
     }

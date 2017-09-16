@@ -20,6 +20,7 @@ public class GrafikView extends View {
     Paint paint_black;
     Paint paint_blue;
     Paint paint_green;
+    int abc=0;
 
     public GrafikView(Context context) {
         super(context);
@@ -66,9 +67,23 @@ public class GrafikView extends View {
 
         paint_black.setStrokeWidth(sw);
 
-        canvas.drawText("Hallo Dana",100,100,paint_black);
-        canvas.drawLine(200,200,300,300,paint_blue);
+        canvas.drawText("Hallo Dana hjgjhgjgjhjghjg",800,100,paint_black);
+        canvas.drawLine(100,100,300,100,paint_blue);
+        canvas.drawLine(300,100,300,200,paint_blue);
+        canvas.drawLine(300,200,100,200,paint_blue);
+        canvas.drawLine(100,200,100,100,paint_blue);
 
+        for(int i=0;i<300;i=i+10) {
+            canvas.drawText("Hallo Dana", width / 2+i, height / 2 + i, paint_black);
+        }
+
+        for(int i=0;i<300;i=i+10) {
+
+            canvas.drawLine(100+i, 100, 200+i, 200, paint_blue);
+        }
+        if (abc>0) {
+            canvas.drawCircle(800, 300, 100, paint_blue);
+        }
     } // Paint
 
 
